@@ -30,7 +30,7 @@ Bahasa pemrograman seperti C, C++, dan Java setidaknya memiliki fitur conditiona
 
 ## A. If-else Statement
 
-1. If statement
+1. if statement
    _If statement_ adalah jenis pengkondisian yang paling mendasar, di mana kode dieksekusi apabila ekspresi terpenuhi atau bernilai True (benar). Pernyataan dari if statement harus memiliki indent minimal sepanjang satu spasi di awal tiap baris kode. Suatu pernyataan dapat berupa satu baris atau satu blok kode.
    > If ekspresi :
    > pernyataan/statement(dieksekusi jika ekspresi bernilai True)
@@ -66,17 +66,31 @@ Bahasa pemrograman seperti C, C++, dan Java setidaknya memiliki fitur conditiona
 >    angka = 5
 >    if angka < 0:
 >        print(angka,"adalah bilangan negatif")
->    else:
->        print("pernyataan ini False!")
+>    print("pernyataan ini False!")
 >    ```
 >    ```text
 > Output:
 > >pernyataan ini False!
 >    ```
 
-Contoh 3
+>Contoh 3
+>
+>```python
+>angka = -2
+>if angka > 0:
+>    print(angka, "adalah bilangan positif")
+>if angka < 0:
+>    print(angka, "adalah bilangan negatif")
+>print("Pernyataan ini bernilai benar")
+> ```
+> ```text
+> Output:
+> >-2 adalah bilangan negatif
+> >pernyataan ini bernilai benar
+> ```
 
+2. if-else statement
+   Pernyataan “else” digunakan ketika bagian benar dan salah dari kondisi tertentu ditentukan untuk dieksekusi. Ketika kondisinya benar, pernyataan di dalam blok if dieksekusi; jika kondisinya salah, program pada blok else akan dieksekusi.
 
-
-
-    
+   Pernyataan if…else dalam Python memiliki sintaks berikut:
+   
