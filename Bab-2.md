@@ -1,4 +1,5 @@
 # Bab 2: Conditional Statement
+
 _Conditional statement_ (yang dalam bahasa Indonesia disebut pernyataan bersyarat atau pengkondisian) adalah fitur dari bahasa pemrograman yang melakukan perhitungan atau tindakan yang berbeda tergantung pada kondisi yang ditentukan programmer. Pengkondisian membuat program memiliki cabang yang masing-masing akan tereksekusi jika persyaratannya terpenuhi.
 
 _Conditional statement_ adalah sebuah statement yang mengandung sebuah kondisi. Jika kondisi tersebut bernilai benar, maka statement akan dijalankan. Jika kondisi tersebut bernilai salah, maka statement tidak akan dijalankan. Pengkondisian biasanya dalam bentuk if statement, yaitu salah satu fitur utama dari bahasa pemrograman, tidak terkecuali Python. Hampir tidak ada bahasa pemrograman yang tidak memiliki if statement dan hampir tidak ada cara untuk memprogram tanpa cabang dalam aliran kode (setidaknya jika kode tersebut perlu memecahkan masalah yang kompleks).Pengkondisian dapat digunakan untuk mengontrol jalannya program. Contoh penggunaan pengkondisian adalah untuk menentukan apakah suatu bilangan merupakan bilangan ganjil atau genap.
@@ -35,39 +36,41 @@ Bahasa pemrograman seperti C, C++, dan Java setidaknya memiliki fitur conditiona
    > If ekspresi :
    > pernyataan/statement(dieksekusi jika ekspresi bernilai True)
 
-   #### Alur Program
+#### Alur Program
 
-    ```mermaid
+   ```mermaid
     flowchart LR
     A([Start]) --> B{Ekspresi <br> <strong>if</strong>}
     B -->|True| C[<strong>perintah</strong> <br> di dalam blok <strong>IF</strong>]
-    C --> E[Rethink]
+    C --> E([End])
     B ---->|False| E([End])
-    ```
+   ```
 
->    Contoh 1
->    
+> Contoh 1
+>
 >    ```python
 >    angka = 5
 >    if angka > 0:
 >        print(angka,"adalah bilangan positif")
 >        print("pernyataan ini benar")
 >    ```
+>
 >    ```rext
 >    Output:
 >    >5 adalah bilangan positif
 >    >pernyataan ini benar
 >    ```
-> 
+>
 
->   Contoh 2
-> 
+> Contoh 2
+>
 >   ```python
 >    angka = 5
 >    if angka < 0:
 >        print(angka,"adalah bilangan negatif")
 >    print("pernyataan ini False!")
 >    ```
+>
 >    ```text
 > Output:
 > >pernyataan ini False!
@@ -83,6 +86,7 @@ Bahasa pemrograman seperti C, C++, dan Java setidaknya memiliki fitur conditiona
 >    print(angka, "adalah bilangan negatif")
 >print("Pernyataan ini bernilai benar")
 > ```
+>
 > ```text
 > Output:
 > >-2 adalah bilangan negatif
@@ -92,5 +96,20 @@ Bahasa pemrograman seperti C, C++, dan Java setidaknya memiliki fitur conditiona
 2. if-else statement
    Pernyataan “else” digunakan ketika bagian benar dan salah dari kondisi tertentu ditentukan untuk dieksekusi. Ketika kondisinya benar, pernyataan di dalam blok if dieksekusi; jika kondisinya salah, program pada blok else akan dieksekusi.
 
-   Pernyataan if…else dalam Python memiliki sintaks berikut:
-   
+   Pernyataan if-else dalam Python memiliki sintaks berikut:
+
+> if ekspresi:
+> #Pernyataan/stastement (dieksekusi jika ekspresi bernilai True )
+> else:
+> #pernyataan/statement (dieksekusi jika ekspresi bernilai False)
+
+#### Alur Program
+
+   ```mermaid
+    flowchart LR
+    A([Start]) --> B{Ekspresi <br> <strong>if</strong>}
+    B -->|True| C[<strong>perintah</strong> <br> di dalam blok <strong>IF</strong>]
+    C --> E([Stop])
+    D --> E([Stop])
+    B ---->|False| D[<strong>perintah</strong> <br> di dalam blok <strong>ELSE</strong>]
+   ```
