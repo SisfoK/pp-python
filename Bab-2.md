@@ -1,7 +1,5 @@
 # Bab 2: Conditional Statement
 
-_Conditional statement_ (yang dalam bahasa Indonesia disebut pernyataan bersyarat atau pengkondisian) adalah fitur dari bahasa pemrograman yang melakukan perhitungan atau tindakan yang berbeda tergantung pada kondisi yang ditentukan programmer. Pengkondisian membuat program memiliki cabang yang masing-masing akan tereksekusi jika persyaratannya terpenuhi.
-
 _Conditional statement_ adalah sebuah statement yang mengandung sebuah kondisi. Jika kondisi tersebut bernilai benar, maka statement akan dijalankan. Jika kondisi tersebut bernilai salah, maka statement tidak akan dijalankan. Pengkondisian biasanya dalam bentuk if statement, yaitu salah satu fitur utama dari bahasa pemrograman, tidak terkecuali Python. Hampir tidak ada bahasa pemrograman yang tidak memiliki if statement dan hampir tidak ada cara untuk memprogram tanpa cabang dalam aliran kode (setidaknya jika kode tersebut perlu memecahkan masalah yang kompleks).Pengkondisian dapat digunakan untuk mengontrol jalannya program. Contoh penggunaan pengkondisian adalah untuk menentukan apakah suatu bilangan merupakan bilangan ganjil atau genap.
 
 Bahasa pemrograman seperti C, C++, dan Java setidaknya memiliki fitur conditional statement seperti if statement dan switch case, namun dalam bahasa python switch case baru di adaptasi pada versi 3.10 keatas yang dikenal sebagai “structural pattern matching” atau “match case”. Artinya, pada versi sebelumnya pengkondisian hanya dapat dilakukan menggunakan if statement. Ekspresi terdiri dari satu atau beberapa operator perbandingan dan operator logika yang akan menghasilkan nilai True (benar) atau False (salah).
@@ -113,3 +111,30 @@ Bahasa pemrograman seperti C, C++, dan Java setidaknya memiliki fitur conditiona
     D --> E([Stop])
     B ---->|False| D[<strong>perintah</strong> <br> di dalam blok <strong>ELSE</strong>]
    ```
+> Contoh 1
+> ```python
+> angka = 5
+> if angka >= 0:
+>     print("bilangan positif atau nol")
+> else:
+>    print(angka, "adalah bilangan negatif")
+> ```
+> ```text
+> Output
+> >bilangan positif atau nol
+> ```
+
+> Contoh 2
+> ```python
+> x = 5
+> y = 20
+> if x == y:
+>     print("x dan y bernilai sama")
+> else:
+>     print("x tidak sama dengan y")
+> ```
+>
+>```text
+> Output:
+> >x tidak sama dengan y
+> ```
