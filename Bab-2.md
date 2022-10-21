@@ -101,7 +101,7 @@ Bahasa pemrograman seperti C, C++, dan Java setidaknya memiliki fitur conditiona
 > else:
 > #pernyataan/statement (dieksekusi jika ekspresi bernilai False)
 
-#### Alur Program
+**Alur Program**
 
    ```mermaid
     flowchart LR
@@ -138,3 +138,115 @@ Bahasa pemrograman seperti C, C++, dan Java setidaknya memiliki fitur conditiona
 > Output:
 > >x tidak sama dengan y
 > ```
+
+3.  If-elif-else statement
+Pernyataan elif memungkinkan Anda untuk memeriksa beberapa ekspresi dan mengeksekusi blok kode segera setelah salah satu kondisi mengevaluasi ke True. Dalam hal ini, kondisi if dievaluasi terlebih dahulu. Jika salah, pernyataan elif akan dieksekusi, jika itu juga salah, pernyataan else akan dieksekusi.
+
+Pernyataan If..Elif..else dalam Python memiliki sintaks berikut:
+
+> ```python
+> if ekspresi:
+>     #dieksekusi jika ekspresi bernilai True#
+> elif ekspresi:
+>     #dieksekusi jika ekspresi (elif) bernilai True
+> else:
+>     #dieksekusi jika ekspresi bernilai False
+
+**Alur program**
+
+   ```mermaid
+    flowchart LR
+    A([Start]) --> B{Ekspresi <br> <strong>if</strong>}
+    B -->|True| C[<strong>perintah</strong> <br> di dalam blok <strong>IF</strong>]
+    B ---->|False| D{Ekspresi <br> <strong>elif</strong>}
+    D --->|True| F[<strong>perintah</strong> <br> di dalam blok <strong>ELIF</strong>]
+    D ---->|False| G[<strong>perintah</strong> <br> di dalam blok <strong>ELSE</strong>]
+    
+    F --> E([Stop])
+    C --> E{ Stop}
+    G --> E([Stop])    
+   ```
+
+> Contoh 3
+> ```python
+> angka = 1
+> if angka > 0:
+>     print(angka, "adalah bilangan positif")
+> elif angka == 0:
+>     print(angka, "adalah bilangan nol")
+> else:
+>     print(angka, "adalah bilangan negatif")
+> 
+> #jika angka = 0 maka outputnya "0 adalah bilangan nol"
+> #jika angka = -1 maka outputnya "-1 adalah bilangan negatif"
+> ```
+> ```text
+> Outuput:
+> >1 adalah bilangan positif
+> ```
+
+>Contoh 2
+> ```python
+> angka = -1
+> if angka > 0:
+>     print(angka, "adalah bilangan positif")
+> elif angka == 0:
+>     print(angka, "adalah bilangan nol")
+> else:
+>     print(angka, "adalah bilangan negatif")
+> 
+> #jika angka = 0 maka outputnya "0 adalah bilangan nol"
+> #jika angka = 1 maka outputnya "1 adalah bilangan positif"
+> #jika angka = -1 maka outputnya "-1 adalah bilangan negatif"
+> ```
+> ```text
+> Outputnya: 
+> >-1 adalah bilangan negatif
+> ```
+
+4. Nested if Statement
+   Pernyataan IF bersarang adalah pernyataan di mana pernyataan If terletak di dalam pernyataan If lainnya. Ini digunakan ketika variabel harus diproses lebih dari sekali. Pernyataan if, if-else, dan if…elif…else dapat digunakan dalam program.
+   
+Pernyataan if bersarang dalam Python memiliki sintaks berikut:
+
+> ```python
+>if ekspresi:
+>  #dieksekusi jika ekspresi bernilai True#
+> if ekspresi:
+> # dieksekusi jika ekspresi if (luar) dan
+> # if (dalam) bernilai True
+>```
+
+**Alur program**
+
+   ```mermaid
+   flowchart LR
+   A([Start]) --> B{Ekspresi <br> <strong>if</strong> 'luar'}
+   B -->|False| E
+   B ---->|True| D[<strong>perintah</strong> <br> di dalam blok <strong>IF</strong> 'luar']
+   D --->F{Ekspresi <br> <strong>if</strong> 'dalam'}
+   F --->|False| E
+   F --->|True| H[<strong>perintah</strong> <br> di dalam blok <strong>IF</strong> 'dalam']
+   H --> E([Stop])
+   E([Stop])
+   ```
+
+> Contoh 1
+> ```python
+> angka = -1
+> if angka >= 0:
+>     if angka == 0:
+>         print(angka,"adalah bilangan nol")
+>     else:
+>         print(angka,"adalah bilangan positif")
+> else:
+>     print(angka,"adalah bilangan negatif")
+> ```
+> ```text
+> Outputnya:
+> >-1 adalah bilangan negatif
+> ```
+
+>Contoh 2
+> ```python
+> 
