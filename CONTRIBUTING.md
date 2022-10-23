@@ -4,7 +4,8 @@
 
 - Hanya menggunakan satu h1 atau `#`,
 - Tidak menggunakan urutan A, B, C, tetapi menggunakan heading misalnya
-  `A. Judul 1` diganti menjadi `## Judul 1`
+  `A. Judul 1` diganti menjadi `## Judul 1`,
+- Batas vertikal mematuhi peraturan `80-char`.
 
 ## Code
 
