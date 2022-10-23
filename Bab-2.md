@@ -212,7 +212,7 @@ Pernyataan if bersarang dalam Python memiliki sintaks berikut:
 
 > ```python
 >if ekspresi:
->  #dieksekusi jika ekspresi bernilai True#
+>  #dieksekusi jika ekspresi bernilai True
 > if ekspresi:
 > # dieksekusi jika ekspresi if (luar) dan
 > # if (dalam) bernilai True
