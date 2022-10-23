@@ -1,7 +1,7 @@
-----
+---
 title: Intro to Python
 layout: default
-----
+---
 
 # Bab 1: Intro to Python
 
