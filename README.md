@@ -10,6 +10,6 @@ Happy coding.
 
 Contributor:
 
--- Deo
--- Bob
+- Deo
+- Bob
 

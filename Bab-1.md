@@ -1,3 +1,8 @@
+----
+title: Intro to Python
+layout: default
+----
+
 # Bab 1: Intro to Python
 
 Python sebagai bahasa pemrograman yang populer dan komprehensif dengan menggabungkan kapabilitas, sintaksis kode yang jelas serta dilengkapi pustaka standar yang mempunyai fungsionalitas sangat besar. Python termasuk dari jajaran bahasa pemrograman tingkat tinggi seperti bahasa pemrograman C[^1], C++, Java, Perl dan Pascal.
