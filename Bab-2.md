@@ -109,7 +109,7 @@ Bahasa pemrograman seperti C, C++, dan Java setidaknya memiliki fitur conditiona
     B -->|True| C[<strong>perintah</strong> <br> di dalam blok <strong>IF</strong>]
     C --> E([Stop])
     D --> E([Stop])
-    B ---->|False| D[<strong>perintah</strong> <br> di dalam blok <strong>ELSE</strong>]
+    B -->|False| D[<strong>perintah</strong> <br> di dalam blok <strong>ELSE</strong>]
    ```
 > Contoh 1
 > ```python
@@ -139,14 +139,14 @@ Bahasa pemrograman seperti C, C++, dan Java setidaknya memiliki fitur conditiona
 > >x tidak sama dengan y
 > ```
 
-3.  If-elif-else statement
+3. If-elif-else statement
 Pernyataan elif memungkinkan Anda untuk memeriksa beberapa ekspresi dan mengeksekusi blok kode segera setelah salah satu kondisi mengevaluasi ke True. Dalam hal ini, kondisi if dievaluasi terlebih dahulu. Jika salah, pernyataan elif akan dieksekusi, jika itu juga salah, pernyataan else akan dieksekusi.
 
 Pernyataan If..Elif..else dalam Python memiliki sintaks berikut:
 
 > ```python
 > if ekspresi:
->     #dieksekusi jika ekspresi bernilai True#
+>     #dieksekusi jika ekspresi bernilai True
 > elif ekspresi:
 >     #dieksekusi jika ekspresi (elif) bernilai True
 > else:
