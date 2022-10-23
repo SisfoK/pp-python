@@ -1,5 +1,6 @@
 ---
 title: Intro to Python
+date: '2022-10-01'
 layout: default
 ---
 
