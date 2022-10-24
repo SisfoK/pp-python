@@ -304,21 +304,21 @@ Short Hand if dalam Python memiliki sintaks berikut:
 
    ```mermaid
    flowchart LR
-   A([Start]) --> B[Match Variabel]
+   B[Match Variabel]
    B ----> D{Case <br> Nilai-1}
-   D ---> |Ya| F[Statement-1]
+   D ---> |True| F[Statement-1]
    F ---> E
 
-   D --->|Tidak| H{Case <br> Nilai-2}
-   H --->|Ya| J[Statement-2]
+   D --->|False| H{Case <br> Nilai-2}
+   H --->|True| J[Statement-2]
    J ---> E
 
-   H --->|Tidak| L{Case <br> Nilai-3}
-   L --->|Ya| N[Statement-3]
+   H --->|False| L{Case <br> Nilai-3}
+   L --->|True| N[Statement-3]
    N ---> E 
 
-   L --->|Tidak| P{Case <br> 'default'}
-   P --->|Ya| R[Statement default]
+   L --->|False| P{Case <br> 'default'}
+   P --->|True| R[Statement default]
    R ---> E
 
    E([Stop])
