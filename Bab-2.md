@@ -318,7 +318,7 @@ Short Hand if dalam Python memiliki sintaks berikut:
    N ---> E 
 
    L --->|False| P{Case <br> 'default'}
-   P --->|True| R[Statement default]
+   P ---> R[Statement default]
    R ---> E
 
    E([Stop])
