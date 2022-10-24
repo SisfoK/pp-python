@@ -248,6 +248,78 @@ Pernyataan if bersarang dalam Python memiliki sintaks berikut:
 > >-1 adalah bilangan negatif
 > ```
 
->Contoh 2
+5. Shorthand if statement
+   Shorthand if statement digunakan ketika hanya satu statement yang perlu dieksekusi di dalam blok if. Pernyataan ini dapat disertakan di baris yang sama dengan pernyataan If. 
+
+Pernyataan Short Hand if dalam Python memiliki sintaks berikut:
+> if kondisi: statement
+
+Contoh Program:
+
 > ```python
+> a = 123
+> if a > 100:
+>     print(a, "lebih besar dari seratus")
+> ```
+>
+> ```text
+> Output:
+> >123 lebih besar dari seratus
+> ```
+
+6. ShortHand if-else statement
+   Shorthand if-else digunakan untuk menyebutkan pernyataan If-else dalam satu baris di mana hanya ada satu pernyataan untuk dieksekusi di blok if dan else.
+
+Short Hand if-else dalam Python memiliki sintaks berikut:
+> statement (True) if kondisi else statement (False)
+
+Contoh Program:
+> ```python
+> a = 123
+> print(a, "lebih besar dari 100") if a > 100 else print(a, "lebih kecil dari 100")
+> ```
 > 
+> ```text
+> Output:
+> 123 lebih besar dari 100
+> ```
+
+## B. Match Case
+Pernyataan switch mengevaluasi ekspresi, mencocokkan nilai ekspresi terhadap serangkaian klausa kasus, dan mengeksekusi pernyataan setelah klausa kasus pertama dengan nilai yang cocok, hingga pernyataan break ditemukan. Klausa default dari pernyataan switch akan dilompati jika tidak ada kasus yang cocok dengan nilai ekspresi.
+
+Short Hand if dalam Python memiliki sintaks berikut:
+> ```python
+> match variabel:
+>    case nilai-1:
+>        statement-1
+>    case nilai-2:
+>        statement-2
+>   case nilai-…:
+>        statement-…
+>    case _:
+>        statement-default (jika tidak ada case yang sesuai)
+> ```
+
+**Alur Program**
+
+   ```mermaid
+   flowchart LR
+   A([Start]) --> B[Match Variabel]
+   B ----> D{Case <br> Nilai-1}
+   D ---> |Ya| F[Statement-1]
+   F ---> E
+
+   D --->|Tidak| H{Case <br> Nilai-2}
+   H --->|Ya| J[Statement-2]
+   J ---> E
+
+   H --->|Tidak| L{Case <br> Nilai-3}
+   L --->|Ya| N[Statement-3]
+   N ---> E 
+
+   L --->|Tidak| P{Case <br> 'default'}
+   P --->|Ya| R[Statement default]
+   R ---> E
+
+   E([Stop])
+   ```
