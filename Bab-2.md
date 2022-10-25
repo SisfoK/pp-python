@@ -323,3 +323,30 @@ Short Hand if dalam Python memiliki sintaks berikut:
 
    E([Stop])
    ```
+Contoh program:
+
+>```python
+>bahasa = "Python"
+>match bahasa:
+>    case "JavaScript":
+>        print("kamu akan menjadi web developer.")
+>    
+>    case "Python":
+>        print("kamu akan menjadi Data Scientist")
+>
+>    case "PHP":
+>        print("kamu akan menjadi backend developer")
+>
+>    case "Solidity":
+>        print("kamu akan menjadi Blockchain developer")
+>        
+>    case "Java":
+>        print("kamu akan menjadi mobile app developer")
+>        
+>    case _:
+>        print("bahasa tidak penting, yang penting adalah mampu untuk menyelesaikan masalah.")
+>```
+>
+> ```text
+> Output:
+> >kamu akan menjadi Data Scientist
