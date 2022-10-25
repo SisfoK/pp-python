@@ -98,7 +98,7 @@ Tabel Operator Logika
    Pernyataan if-else dalam Python memiliki sintaks berikut:
 
 > if ekspresi:
-> #Pernyataan/stastement (dieksekusi jika ekspresi bernilai True )
+> #Pernyataan/stastement (dieksekusi jika ekspresi bernilai True)
 > else:
 > #pernyataan/statement (dieksekusi jika ekspresi bernilai False)
 
