@@ -2,16 +2,18 @@
 Looping atau perulangan merupakan cara yang digunakan untuk menjalankan perintah yang berulang untuk data berbentuk kelompok seperti list, tuple atau string. Dalam melakukan perintah looping biasanya digunakan perintah For Loop dan While Loop, serta penerapan pernyataan Break dan Continue sebagai pilihan tambahan dalam membuat perintah looping.
 
 ## A. For Loop
+
 Perintah “For” digunakan dalam melakukan perulangan pada data kelompok yang sudah diketahui jumlah iterasinya dan akan berhenti jika iterasinya telah dieksekusi semuanya.
 
 >Contoh:
->```python
+> ```python
 > fruits = ["apel", "pisang", "mangga"]
 > for x in fruits:
 >     print("Ini adalah", x)
->```
+> ```
+> 
+> ```text
 > Output:
->```text
 > Ini adalah apel
 > Ini adalah pisang
 > Ini adalah mangga
@@ -19,8 +21,8 @@ Perintah “For” digunakan dalam melakukan perulangan pada data kelompok yang 
 ## B. While Loop
 Perintah “While” digunakan dalam melakukan perulangan pada data kelompok yang tidak diketahui jumlah pasti iterasinya. Oleh karena itu, biasanya perintah while akan terus melakukan perulangan selama suatu kondisi masih terpenuhi. Selain itu, pada looping juga kita bisa tambahkan kondisi “else” seperti layaknya pada Conditional Statement pada bab sebelumnya.
 
->Contoh:
->```python
+> Contoh:
+> ```python
 > n = int(input("Enter n: "))
 >
 > sum = 0 
@@ -30,9 +32,10 @@ Perintah “While” digunakan dalam melakukan perulangan pada data kelompok yan
 >     i = i+1
 > else: #Penambahan kondisi else optional
 >     print("The sum is", sum)
->```
+> ```
+>
+> ```text
 > Output:
->```text
 > Enter n: 5
 > The sum is 15
 > ```
@@ -46,32 +49,36 @@ Penggunaan “Break” dan “Continue” digunakan untuk menambahkan kondisi pe
 >     if x == "pisang":
 >         break
 >     print("Ini adalah", x)
->```
->```text
+> ```
+>
+> ```text
 > Output:
 > Ini adalah apel
->```
+> ```
 
 ### 2. Continue Statement
 Sama halnya pada “For Loop” statement di atas juga dapat digunakan pada “While Loop” dengan penulisan yang sama. Menambahkan conditional statement ke dalam looping yang dibuat.
+
 > ```python
 > fruits = ["apel", "pisang", "mangga"]
 > for x in fruits:
 >     if x == "pisang":
 >         continue
 >     print("Ini adalah", x)
->```
+> ```
 >
->```text
+> ```text
 > Outputnya:
 > Ini adalah apel
 > Ini adalah mangga
->```
+> ```
 
 ## D. Nested Loop
+
 Nested loop atau perulangan bersarang adalah sebuah perulangan yang di dalamnya terdapat perulangan yang lain. Baik itu perulangan While-For, While-While, For-For atau berbagai macam kombinasi Nested Loop.
 
 Contoh:
+
 > ```python
 > adj = ["red", "tasty"]
 > fruits = ["apple", "banana"]
@@ -90,9 +97,11 @@ Contoh:
 >```
 
 ### E. Try-Exception
+
 Ketika terjadi kesalahan atau exception, Python biasanya akan berhenti dan menghasilkan pesan kesalahan. Pengecualian ini dapat ditangani menggunakan pernyataan try:
 Contoh 1:
->```python
+
+> ```python
 > x = 3
 > y = 'Empat'
 > try:
@@ -101,14 +110,15 @@ Contoh 1:
 >     z =str(x) + y
 >
 > print(z)
->```
+> ```
 >
->```text
+> ```text
 > Output:
 > 3Empat
->```
+> ```
 
 Contoh 2:
+
 > ```python
 > x = 3
 > y = 'Empat'
@@ -128,6 +138,7 @@ Contoh 2:
 > ```
 
 Contoh 3:
+
 > ```python
 > x = 3
 > y = 'Empat'
@@ -141,7 +152,7 @@ Contoh 3:
 > print(z)
 > ```
 >
->```Text
+> ```Text
 > Output:
 > !!! salah satunya dilakukan conversi type data
 > Empat3
