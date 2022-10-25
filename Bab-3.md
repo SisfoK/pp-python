@@ -42,6 +42,7 @@ Perintah “While” digunakan dalam melakukan perulangan pada data kelompok yan
 
 ## C. Break dan Continue
 Penggunaan “Break” dan “Continue” digunakan untuk menambahkan kondisi perintah pada looping sehingga dalam looping tersebut akan ada kondisi “If” yang ditambahkan. Break digunakan jika kita ingin menghentikan sebuah looping jika suatu kondisi telah terpenuhi, sedangkan continue digunakan untuk melewati iterasi sekarang dan melanjutkan langsung ke iterasi selanjutnya jika kondisinya terpenuhi.
+
 ### 1. Break Statement
 > ```python
 > fruits = ["apel", "pisang", "mangga"]
@@ -77,8 +78,7 @@ Sama halnya pada “For Loop” statement di atas juga dapat digunakan pada “W
 
 Nested loop atau perulangan bersarang adalah sebuah perulangan yang di dalamnya terdapat perulangan yang lain. Baik itu perulangan While-For, While-While, For-For atau berbagai macam kombinasi Nested Loop.
 
-Contoh:
-
+> Contoh:
 > ```python
 > adj = ["red", "tasty"]
 > fruits = ["apple", "banana"]
@@ -99,8 +99,8 @@ Contoh:
 ### E. Try-Exception
 
 Ketika terjadi kesalahan atau exception, Python biasanya akan berhenti dan menghasilkan pesan kesalahan. Pengecualian ini dapat ditangani menggunakan pernyataan try:
-Contoh 1:
 
+> Contoh 1:
 > ```python
 > x = 3
 > y = 'Empat'
@@ -117,8 +117,7 @@ Contoh 1:
 > 3Empat
 > ```
 
-Contoh 2:
-
+> Contoh 2:
 > ```python
 > x = 3
 > y = 'Empat'
@@ -137,8 +136,8 @@ Contoh 2:
 > Empat3
 > ```
 
-Contoh 3:
 
+> Contoh 3:
 > ```python
 > x = 3
 > y = 'Empat'
