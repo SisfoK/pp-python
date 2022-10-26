@@ -1,4 +1,8 @@
-# Bab 4. Collection
+---
+title: Collection
+layout: default
+author: "@deovaliandro dan @BobChrismansyah"
+---
 
 Collection adalah kumpulan dari beberapa nilai baik itu angka, string, bahkan variable
 dalam satu grup. Collection terbagi menjadi tiga yaitu List, Tuples, Dictionary, Set.

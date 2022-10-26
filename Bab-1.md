@@ -2,7 +2,6 @@
 title: Intro to Python
 layout: default
 author: '@deovaliandro dan @BobChrismansyah'
-toc: true
 ---
 
 Python sebagai bahasa pemrograman yang populer dan komprehensif dengan

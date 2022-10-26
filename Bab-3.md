@@ -1,4 +1,9 @@
-# Bab 3 Looping
+---
+title: Looping
+layout: default
+author: "@BobChrismansyah dan @deovaliandro"
+---
+
 Looping atau perulangan merupakan cara yang digunakan untuk menjalankan perintah yang berulang untuk data berbentuk kelompok seperti list, tuple atau string. Dalam melakukan perintah looping biasanya digunakan perintah For Loop dan While Loop, serta penerapan pernyataan Break dan Continue sebagai pilihan tambahan dalam membuat perintah looping.
 
 ## A. For Loop

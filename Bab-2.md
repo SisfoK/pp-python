@@ -1,4 +1,8 @@
-# Bab 2: Conditional Statement
+---
+title: Conditional Statement
+layout: default
+author: "@BobChrismansyah dan @deovaliandro"
+---
 
 _Conditional statement_ adalah sebuah statement yang mengandung sebuah kondisi. Jika kondisi tersebut bernilai benar, maka statement akan dijalankan. Jika kondisi tersebut bernilai salah, maka statement tidak akan dijalankan. Pengkondisian biasanya dalam bentuk if statement, yaitu salah satu fitur utama dari bahasa pemrograman, tidak terkecuali Python. Hampir tidak ada bahasa pemrograman yang tidak memiliki if statement dan hampir tidak ada cara untuk memprogram tanpa cabang dalam aliran kode (setidaknya jika kode tersebut perlu memecahkan masalah yang kompleks).Pengkondisian dapat digunakan untuk mengontrol jalannya program. Contoh penggunaan pengkondisian adalah untuk menentukan apakah suatu bilangan merupakan bilangan ganjil atau genap.
 
