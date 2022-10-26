@@ -1,6 +1,5 @@
 ---
 title: Intro to Python
-date: '2022-10-01'
 layout: default
 author: '@deovaliandro dan @BobChrismansyah'
 toc: true
