@@ -75,4 +75,4 @@ listExample.insert(1, 2)
 untuk menambah data pada posisi tertentu.
 
 
-Untuk fungsi lainnya bisa dilihat pada: (Dokumentasi Resmi)[https://docs.python.org/3/tutorial/datastructures.html]
+Untuk fungsi lainnya bisa dilihat pada: [Dokumentasi Resmi](https://docs.python.org/3/tutorial/datastructures.html)
