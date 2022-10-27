@@ -1,0 +1,64 @@
+I"<p>Collection adalah kumpulan dari beberapa nilai baik itu angka, string, bahkan variable
+dalam satu grup. Collection terbagi menjadi tiga yaitu List, Tuples, Dictionary, Set.</p>
+
+<h2 id="list">List</h2>
+
+<p>List digunakan untuk menyimpan beberapa item dalam satu variabel. List adalah salah
+satu dari 4 tipe data bawaan dalam Python yang digunakan untuk menyimpan kumpulan
+data.</p>
+
+<p>Untuk membuat list:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">listExample</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+</code></pre></div></div>
+
+<p>Dan untuk mengaksesnya menggunakan:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">listExample</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</code></pre></div></div>
+
+<p>Untuk mengubah data list:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">listExample</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">10</span>
+</code></pre></div></div>
+
+<h3 id="built-in-function-pada-list">Built-In Function pada List</h3>
+
+<h4 id="append">Append</h4>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">listExample</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>digunakan untuk menambah data.</p>
+
+<h4 id="extend">Extend</h4>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">listExample</span><span class="p">.</span><span class="n">extend</span><span class="p">([</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">])</span>
+</code></pre></div></div>
+
+<p>digunakan untuk menambah list ke dalam list.</p>
+
+<h4 id="remove">Remove</h4>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">listExample</span><span class="p">.</span><span class="n">remove</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>digunakan untuk menghapus data.</p>
+
+<h4 id="pop">Pop</h4>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">listExample</span><span class="p">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>digunakan untuk menghapus data pada index i, tetapi jika tidak diberikan nilai i
+maka akan mengambil nilai terakhir.</p>
+
+<h4 id="insert">Insert</h4>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">listExample</span><span class="p">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>untuk menambah data pada posisi tertentu.</p>
+
+<p>Untuk fungsi lainnya bisa dilihat pada: (Dokumentasi Resmi)[https://docs.python.org/3/tutorial/datastructures.html]</p>
+:ET

@@ -1,0 +1,158 @@
+I"�+<p>Looping atau perulangan merupakan cara yang digunakan untuk menjalankan perintah yang berulang untuk data berbentuk kelompok seperti list, tuple atau string. Dalam melakukan perintah looping biasanya digunakan perintah For Loop dan While Loop, serta penerapan pernyataan Break dan Continue sebagai pilihan tambahan dalam membuat perintah looping.</p>
+
+<h2 id="a-for-loop">A. For Loop</h2>
+
+<p>Perintah “For” digunakan dalam melakukan perulangan pada data kelompok yang sudah diketahui jumlah iterasinya dan akan berhenti jika iterasinya telah dieksekusi semuanya.</p>
+
+<blockquote>
+  <p>Contoh:</p>
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s">"apel"</span><span class="p">,</span> <span class="s">"pisang"</span><span class="p">,</span> <span class="s">"mangga"</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">fruits</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"Ini adalah"</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+</code></pre></div>  </div>
+
+  <p>```text
+Output:
+Ini adalah apel
+Ini adalah pisang
+Ini adalah mangga</p>
+</blockquote>
+
+<h2 id="b-while-loop">B. While Loop</h2>
+<p>Perintah “While” digunakan dalam melakukan perulangan pada data kelompok yang tidak diketahui jumlah pasti iterasinya. Oleh karena itu, biasanya perintah while akan terus melakukan perulangan selama suatu kondisi masih terpenuhi. Selain itu, pada looping juga kita bisa tambahkan kondisi “else” seperti layaknya pada Conditional Statement pada bab sebelumnya.</p>
+
+<blockquote>
+  <p>Contoh:</p>
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Enter n: "</span><span class="p">))</span>
+
+<span class="nb">sum</span> <span class="o">=</span> <span class="mi">0</span> 
+<span class="n">i</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="k">while</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="p">:</span>
+    <span class="nb">sum</span> <span class="o">=</span> <span class="nb">sum</span> <span class="o">+</span> <span class="n">i</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="n">i</span><span class="o">+</span><span class="mi">1</span>
+<span class="k">else</span><span class="p">:</span> <span class="c1">#Penambahan kondisi else optional
+</span>    <span class="k">print</span><span class="p">(</span><span class="s">"The sum is"</span><span class="p">,</span> <span class="nb">sum</span><span class="p">)</span>
+</code></pre></div>  </div>
+
+  <div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Output:
+Enter n: 5
+The sum is 15
+</code></pre></div>  </div>
+</blockquote>
+
+<h2 id="c-break-dan-continue">C. Break dan Continue</h2>
+<p>Penggunaan “Break” dan “Continue” digunakan untuk menambahkan kondisi perintah pada looping sehingga dalam looping tersebut akan ada kondisi “If” yang ditambahkan. Break digunakan jika kita ingin menghentikan sebuah looping jika suatu kondisi telah terpenuhi, sedangkan continue digunakan untuk melewati iterasi sekarang dan melanjutkan langsung ke iterasi selanjutnya jika kondisinya terpenuhi.</p>
+
+<h3 id="1-break-statement">1. Break Statement</h3>
+<blockquote>
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s">"apel"</span><span class="p">,</span> <span class="s">"pisang"</span><span class="p">,</span> <span class="s">"mangga"</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">fruits</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="s">"pisang"</span><span class="p">:</span>
+        <span class="k">break</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"Ini adalah"</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+</code></pre></div>  </div>
+
+  <div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Output:
+Ini adalah apel
+</code></pre></div>  </div>
+</blockquote>
+
+<h3 id="2-continue-statement">2. Continue Statement</h3>
+<p>Sama halnya pada “For Loop” statement di atas juga dapat digunakan pada “While Loop” dengan penulisan yang sama. Menambahkan conditional statement ke dalam looping yang dibuat.</p>
+
+<blockquote>
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s">"apel"</span><span class="p">,</span> <span class="s">"pisang"</span><span class="p">,</span> <span class="s">"mangga"</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">fruits</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="s">"pisang"</span><span class="p">:</span>
+        <span class="k">continue</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"Ini adalah"</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+</code></pre></div>  </div>
+
+  <div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Outputnya:
+Ini adalah apel
+Ini adalah mangga
+</code></pre></div>  </div>
+</blockquote>
+
+<h2 id="d-nested-loop">D. Nested Loop</h2>
+
+<p>Nested loop atau perulangan bersarang adalah sebuah perulangan yang di dalamnya terdapat perulangan yang lain. Baik itu perulangan While-For, While-While, For-For atau berbagai macam kombinasi Nested Loop.</p>
+
+<blockquote>
+  <p>Contoh:</p>
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">adj</span> <span class="o">=</span> <span class="p">[</span><span class="s">"red"</span><span class="p">,</span> <span class="s">"tasty"</span><span class="p">]</span>
+<span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s">"apple"</span><span class="p">,</span> <span class="s">"banana"</span><span class="p">]</span>
+
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">adj</span><span class="p">:</span> <span class="c1">#Loop Pertama
+</span>    <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">fruits</span><span class="p">:</span> <span class="c1">#Loop Kedua
+</span>        <span class="k">print</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+</code></pre></div>  </div>
+
+  <div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Output:
+red apple
+red banana
+tasty apple
+tasty banana
+</code></pre></div>  </div>
+</blockquote>
+
+<h3 id="e-try-exception">E. Try-Exception</h3>
+
+<p>Ketika terjadi kesalahan atau exception, Python biasanya akan berhenti dan menghasilkan pesan kesalahan. Pengecualian ini dapat ditangani menggunakan pernyataan try:</p>
+
+<blockquote>
+  <p>Contoh 1:</p>
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">y</span> <span class="o">=</span> <span class="s">'Empat'</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">z</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span> 
+<span class="k">except</span><span class="p">:</span>
+    <span class="n">z</span> <span class="o">=</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="n">y</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>
+</code></pre></div>  </div>
+
+  <div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Output:
+3Empat
+</code></pre></div>  </div>
+</blockquote>
+
+<blockquote>
+  <p>Contoh 2:</p>
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">y</span> <span class="o">=</span> <span class="s">'Empat'</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">z</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span> 
+<span class="k">except</span><span class="p">:</span>
+    <span class="n">z</span> <span class="o">=</span> <span class="n">y</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'Tidak dapat menjumlahkan keduanya'</span><span class="p">)</span>
+    
+<span class="k">print</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>
+</code></pre></div>  </div>
+
+  <div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Output:
+Empat3
+</code></pre></div>  </div>
+</blockquote>
+
+<blockquote>
+  <p>Contoh 3:</p>
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">y</span> <span class="o">=</span> <span class="s">'Empat'</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">z</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span> 
+<span class="k">except</span><span class="p">:</span>
+    <span class="n">z</span> <span class="o">=</span> <span class="n">y</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="k">finally</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'!!! salah satunya dilakukan conversi type data'</span><span class="p">)</span>
+    
+<span class="k">print</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>
+</code></pre></div>  </div>
+
+  <pre><code class="language-Text">Output:
+!!! salah satunya dilakukan conversi type data
+Empat3
+</code></pre>
+</blockquote>
+:ET
