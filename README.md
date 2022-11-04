@@ -10,6 +10,6 @@ Happy coding.
 
 Contributor:
 
-- @deovaliandro
-- @BobChrismansyah
+- [Deo Valiandro](https://github.com/deovaliandro)
+- [Bob Chrismansyah](https://github.com/BobChrismansyah)
 
