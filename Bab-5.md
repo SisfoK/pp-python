@@ -133,3 +133,21 @@ tupleToList = list(tupleExample)
 tupleToList[0] = "Dari Tuple Ke List"
 tupleExample = tuple(tupleToList
 ```
+
+## Set
+
+Set adalah kumpulan yang tidak berurutan, tidak dapat diubah, dan tidak terindeks dan
+tidak ada anggota yang terduplikat. Sama halnya dengan tuple, set juga bisa memiliki
+item yang berbeda tipe datanya serta juga dapat diketahui panjangnya atau banyaknya
+item di dalam set dengan menggunakan fungsi len()
+
+Set diinisiasi dengan cara membungkus data menggunakan kurung kurawal
+
+```python
+setExample = {"Tes", 1, 2, "Mantap"}
+```
+
+Set adalah kumpulan beberapa item dan tidak dapat diubah lagi.
+Tetapi kita bisa melakukan manipulasi set tersebut, dengan cara
+melakukan konversi tipe data set ke list, lalu data list yang kita ubah, setelah
+diubah, dilakukan kembali konversi data dari list ke set.
