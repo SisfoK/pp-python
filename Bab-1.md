@@ -602,7 +602,7 @@ Data type of the sum: <class 'int'>
 ```
 
 Dari program di atas dapat dilihat bahwa kita akan melakukan operasi penjumlahan
-dari variabel integer num_int dan string num_str. Karena akan terjadi error bila
+dari variabel integer `num_int` dan string `num_str`. Karena akan terjadi error bila
 tipe data integer dan string dijumlahkan langsung, maka perlu dilakukan konversi
 tipe data string ke integer dengan menggunakan fungsi int(). Setelah dilakukan
 konversi maka kedua variabel tersebut dapat dijumlahkan dan menghasilkan sebuah
