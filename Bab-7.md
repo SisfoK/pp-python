@@ -36,7 +36,7 @@ akan mengembalikan nilai `None`.
 | `[abc]` | Cocokkan salah satu dari karakter dalam kurung kotak (a, b atau c) |
 | `[^abc]` | Cocokkan karakter kecuali yang ada dalam kurung kotak |
 | `[a-d]` | Cocokkan karakter a - d (a, b, c, d) |
-| `..` | Cocokkan semua karakter kecuali new line/ baris baru |
+| `..` | Cocokkan semua karakter kecuali new line/ baris baru sebanyak jumlah dot (`.`) |
 | `^a` | Cocokkan semua karakter yang diawali dengan a |
 | `a$` | Cocokkan semua karakter yang diakhiri dengan a |
 | `ma*n` | Cocokkan semua yang memiliki m diikuti satu a atau lebih, bahkan tidak ada a, misalnya mn |
@@ -50,3 +50,28 @@ akan mengembalikan nilai `None`.
 | `\$a` | `\` digunakan untuk escape character, `\$a` berarti mencari yang cocok dengan `$a` |
 
 ## Special sequence
+
+Special sequences digunakan untuk mencari sebuah string berdasarkan lokasi di mana
+string tersebut berada. Special sequences membuat pola yang umum digunakan lebih
+mudah untuk ditulis.
+
+| Expression | Arti |
+| \A | true jika karakter ditemukan di awal string |
+| \b | true jika karakter ditemukan di awal kata |
+| \B | true jika karakter ditemukan di akhir kata |
+| \d | true jika ditemukan angka pada kata |
+| \D | true jika tidak ditemukan angka pada kata |
+| \s | true jika string ditemukan spasi |
+| \S | true jika tidak mengandung spasi |
+| \w | true jika ditemukan [a-z]|[0-9]|[_] |
+
+Silahkan latihan di [regex101](https://regex101.com/).
+
+## Python RegEx
+
+Python memiliki sebuah modul bernama `re` yang digunakan untuk menjalankan perintah
+regex. Untuk menggunakannya kita perlu mengimport modul `re`.
+
+```python
+import re
+```
