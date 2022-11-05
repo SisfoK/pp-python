@@ -48,3 +48,5 @@ akan mengembalikan nilai `None`.
 | `a{3, 5}` | Cocokkan a yang pas 3 kali sampai pas 5 kali secara berurutan |
 | `(a|b|c)d` | Cocokkan semua yang memiliki a atau b atau c kemudian diikuti d |
 | `\$a` | `\` digunakan untuk escape character, `\$a` berarti mencari yang cocok dengan `$a` |
+
+## Special sequence
