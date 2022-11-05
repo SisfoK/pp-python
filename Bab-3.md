@@ -11,17 +11,19 @@ Looping atau perulangan merupakan cara yang digunakan untuk menjalankan perintah
 Perintah “For” digunakan dalam melakukan perulangan pada data kelompok yang sudah diketahui jumlah iterasinya dan akan berhenti jika iterasinya telah dieksekusi semuanya.
 
 >Contoh:
+>
 > ```python
 > fruits = ["apel", "pisang", "mangga"]
 > for x in fruits:
 >     print("Ini adalah", x)
 > ```
 > 
-> ```text
+> ```bash
 > Output:
 > Ini adalah apel
 > Ini adalah pisang
 > Ini adalah mangga
+> ```
 
 ## B. While Loop
 Perintah “While” digunakan dalam melakukan perulangan pada data kelompok yang tidak diketahui jumlah pasti iterasinya. Oleh karena itu, biasanya perintah while akan terus melakukan perulangan selama suatu kondisi masih terpenuhi. Selain itu, pada looping juga kita bisa tambahkan kondisi “else” seperti layaknya pada Conditional Statement pada bab sebelumnya.
@@ -46,21 +48,24 @@ Perintah “While” digunakan dalam melakukan perulangan pada data kelompok yan
 > ```
 
 ## C. Break dan Continue
+
 Penggunaan “Break” dan “Continue” digunakan untuk menambahkan kondisi perintah pada looping sehingga dalam looping tersebut akan ada kondisi “If” yang ditambahkan. Break digunakan jika kita ingin menghentikan sebuah looping jika suatu kondisi telah terpenuhi, sedangkan continue digunakan untuk melewati iterasi sekarang dan melanjutkan langsung ke iterasi selanjutnya jika kondisinya terpenuhi.
 
 ### 1. Break Statement
-> ```python
-> fruits = ["apel", "pisang", "mangga"]
-> for x in fruits:
->     if x == "pisang":
->         break
->     print("Ini adalah", x)
-> ```
->
-> ```text
-> Output:
-> Ini adalah apel
-> ```
+
+```python
+fruits = ["apel", "pisang", "mangga"]
+for x in fruits:
+    if x == "pisang":
+        break
+    print("Ini adalah", x)
+```
+
+Output:
+
+```bash
+Ini adalah apel
+```
 
 ### 2. Continue Statement
 Sama halnya pada “For Loop” statement di atas juga dapat digunakan pada “While Loop” dengan penulisan yang sama. Menambahkan conditional statement ke dalam looping yang dibuat.

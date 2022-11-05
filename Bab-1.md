@@ -30,7 +30,6 @@ yang ada pada Python:
 | assert | del      | global  | not      | with   |
 | async  | elif     | if      | or       | yield  |
 
-
 ## Identifiers
 
 Identifiers merupakan nama yang diberikan kepada variabel, fungsi, kelas, modul
@@ -47,15 +46,15 @@ Aturan dalam penamaan identifiers:
    Contoh:
 
     ```python
-myClass, var_1, this_is_a_long_variable
+    myClass, var_1, this_is_a_long_variable
     ```
 
 2. Identifiers tidak boleh diawali dengan digit angka. Contoh:
-
-    ```python
-1variable #penulisan salah
-variable1 #penulisan benar
-    ```
+   
+   ```python
+   1variable #penulisan salah
+   variable1 #penulisan benar
+   ```
 
 3. Keywords tidak dapat digunakan sebagai identifiers.
 
@@ -73,11 +72,13 @@ SyntaxError: cannot assign to True
     ```
 
 4. Tidak diperbolehkan menggunakan symbol special seperti `!`, `@`, `#`, `$`,
-`%`, dll. Contoh :
+   `%`, dll. Contoh:
+
 ```python
 x$ = 1 #penulisan salah
 ```
 Outputnya:
+
 ```bash
 File "e:\SISFOK\tes.py", line 1
 x$ = 1
@@ -85,9 +86,9 @@ x$ = 1
 SyntaxError: invalid syntax
 ```
 
-5. Sebuah identifier dapat memiliki panjang berapapun.
+1. Sebuah identifier dapat memiliki panjang berapapun.
 
-6. Identifier Class harus diawali dengan huruf kapital sedangkan semua
+2. Identifier Class harus diawali dengan huruf kapital sedangkan semua
 identifier lainnya harus diawali dengan huruf kecil. Contoh:
     
     ```python

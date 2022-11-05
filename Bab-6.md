@@ -6,6 +6,7 @@ author: "@deovaliandro dan @BobChrismansyah"
 
 Pada bahasa pemrograman Python, operasi pada file
 terjadi sesuai urutan berikut:
+
 1. Membuka file
 2. Membaca atau menulis
 3. Menutup file
@@ -56,6 +57,7 @@ print(file.read())
 ```
 
 Output:
+
 ```bash
 Hello world
 This is the content of test.txt

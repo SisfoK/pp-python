@@ -74,4 +74,16 @@ regex. Untuk menggunakannya kita perlu mengimport modul `re`.
 
 ```python
 import re
+
+string = 'Hello 1234. Welcome 4523 Kaito 1412'
+pattern = '\d+'
+
+result = re.findall(pattern, string)
+print(result)
+```
+
+Output:
+
+```bash
+['1234', '4523', '1412']
 ```
