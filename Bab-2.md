@@ -4,14 +4,14 @@ layout: default
 author: "@BobChrismansyah dan @deovaliandro"
 ---
 
-- [A. If-else Statement](#a-if-else-statement)
+- [If-else Statement](#if-else-statement)
   - [If statement](#if-statement)
-  - [If-else statement](#if-else-statement)
+  - [If-else statement](#if-else-statement-1)
   - [If-elif-else statement](#if-elif-else-statement)
   - [Nested if Statement](#nested-if-statement)
   - [Shorthand if statement](#shorthand-if-statement)
   - [ShortHand if-else statement](#shorthand-if-else-statement)
-- [B. Match Case](#b-match-case)
+- [Match Case](#match-case)
 
 _Conditional statement_ adalah sebuah statement yang mengandung sebuah kondisi.
 Jika kondisi tersebut bernilai benar, maka statement akan dijalankan. Jika
@@ -65,7 +65,7 @@ Tabel Operator Logika
 | or       | Jika salah satu benar | a < 5 or b < 4        | True  |
 | not      | Jika salah satu benar | not(a < 5 and b < 10) | False |
 
-## A. If-else Statement
+## If-else Statement
 
 ### If statement
 
@@ -368,7 +368,7 @@ Output:
 123 lebih besar dari 100
 ```
 
-## B. Match Case
+## Match Case
 
 Pernyataan switch mengevaluasi ekspresi, mencocokkan nilai ekspresi terhadap
 serangkaian klausa kasus, dan mengeksekusi pernyataan setelah klausa kasus
