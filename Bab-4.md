@@ -4,6 +4,11 @@ layout: default
 author: "@deovaliandro dan @BobChrismansyah"
 ---
 
+- [Parameter](#parameter)
+  - [Default parameter](#default-parameter)
+- [Return value](#return-value)
+- [Fungsi Rekursif](#fungsi-rekursif)
+
 Function atau fungsi didefinisikan sebagai sekumpulan baris perintah atau kode
 yang dikelompokkan menjadi satu kesatuan dan dapat dipanggil atau digunakan
 berkali-kali. Sebuah function bisa menerima parameter, bisa mengembalikan suatu

@@ -4,6 +4,9 @@ layout: default
 author: "@deovaliandro dan @BobChrismansyah"
 ---
 
+- [Membuka file](#membuka-file)
+- [Menulis File](#menulis-file)
+
 Pada bahasa pemrograman Python, operasi pada file
 terjadi sesuai urutan berikut:
 

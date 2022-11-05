@@ -4,6 +4,10 @@ layout: default
 author: "@deovaliandro dan @BobChrismansyah"
 ---
 
+- [Meta character](#meta-character)
+- [Special sequence](#special-sequence)
+- [Python RegEx](#python-regex)
+
 RegEx atau Regular Expression adalah susunan karakter yang mendefinisikan suatu
 pattern yang ingin dicari. Umumnya penggunaan regex dapat kita temukan saat
 melakukan pengecekan inputan apakah termasuk email yang valid atau tidak. Di

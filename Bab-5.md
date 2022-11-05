@@ -4,6 +4,18 @@ layout: default
 author: "@deovaliandro dan @BobChrismansyah"
 ---
 
+- [List](#list)
+  - [Built-In Function pada List](#built-in-function-pada-list)
+    - [Append](#append)
+    - [Extend](#extend)
+    - [Remove](#remove)
+    - [Pop](#pop)
+    - [Insert](#insert)
+- [Dictionary](#dictionary)
+  - [Operasi pada Dictionary](#operasi-pada-dictionary)
+- [Tuple](#tuple)
+- [Set](#set)
+
 Collection adalah kumpulan dari beberapa nilai baik itu angka, string, bahkan variable
 dalam satu grup. Collection terbagi menjadi tiga yaitu List, Tuples, Dictionary, Set.
 
