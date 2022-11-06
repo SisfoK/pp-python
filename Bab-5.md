@@ -16,14 +16,15 @@ author: "@deovaliandro dan @BobChrismansyah"
 - [Tuple](#tuple)
 - [Set](#set)
 
-Collection adalah kumpulan dari beberapa nilai baik itu angka, string, bahkan variable
-dalam satu grup. Collection terbagi menjadi tiga yaitu List, Tuples, Dictionary, Set.
+Collection adalah kumpulan dari beberapa nilai baik itu angka, string, bahkan
+variable dalam satu grup. Collection terbagi menjadi tiga yaitu List, Tuples,
+Dictionary, Set.
 
 ## List
 
-List digunakan untuk menyimpan beberapa item dalam satu variabel. List adalah salah
-satu dari 4 tipe data bawaan dalam Python yang digunakan untuk menyimpan kumpulan
-data.
+List digunakan untuk menyimpan beberapa item dalam satu variabel. List adalah
+salah satu dari 4 tipe data bawaan dalam Python yang digunakan untuk menyimpan
+kumpulan data.
 
 Untuk membuat list:
 
@@ -86,12 +87,14 @@ listExample.insert(1, 2)
 
 untuk menambah data pada posisi tertentu.
 
-Untuk fungsi lainnya bisa dilihat pada: [Dokumentasi Resmi](https://docs.python.org/3/tutorial/datastructures.html)
+Untuk fungsi lainnya bisa dilihat pada:
+[Dokumentasi Resmi](https://docs.python.org/3/tutorial/datastructures.html)
 
 ## Dictionary
 
-Dictionary adalah kumpulan nilai kunci, yang digunakan untuk menyimpan nilai data
-key dan value, tidak seperti list yang hanya menyimpan satu nilai sebagai elemen.
+Dictionary adalah kumpulan nilai kunci, yang digunakan untuk menyimpan nilai
+data key dan value, tidak seperti list yang hanya menyimpan satu nilai sebagai
+elemen.
 
 Untuk membuat dictionary:
 
@@ -117,7 +120,8 @@ Untuk mengupdate data pada dictionary kita hanya perlu mengintansinya kembali.
 dictExample["hobby"] = "Playing sudoku"
 ```
 
-Begitu pula untuk menambah data pada dictionary kita hanya perlu menginstansiasinya.
+Begitu pula untuk menambah data pada dictionary kita hanya perlu
+menginstansiasinya.
 
 ```python
 dictExample["graduationYear"] = 2022
@@ -148,10 +152,10 @@ tupleExample = tuple(tupleToList
 
 ## Set
 
-Set adalah kumpulan yang tidak berurutan, tidak dapat diubah, dan tidak terindeks dan
-tidak ada anggota yang terduplikat. Sama halnya dengan tuple, set juga bisa memiliki
-item yang berbeda tipe datanya serta juga dapat diketahui panjangnya atau banyaknya
-item di dalam set dengan menggunakan fungsi len()
+Set adalah kumpulan yang tidak berurutan, tidak dapat diubah, dan tidak
+terindeks dan tidak ada anggota yang terduplikat. Sama halnya dengan tuple, set
+juga bisa memiliki item yang berbeda tipe datanya serta juga dapat diketahui
+panjangnya atau banyaknya item di dalam set dengan menggunakan fungsi `len()`.
 
 Set diinisiasi dengan cara membungkus data menggunakan kurung kurawal
 
@@ -159,7 +163,7 @@ Set diinisiasi dengan cara membungkus data menggunakan kurung kurawal
 setExample = {"Tes", 1, 2, "Mantap"}
 ```
 
-Set adalah kumpulan beberapa item dan tidak dapat diubah lagi.
-Tetapi kita bisa melakukan manipulasi set tersebut, dengan cara
-melakukan konversi tipe data set ke list, lalu data list yang kita ubah, setelah
-diubah, dilakukan kembali konversi data dari list ke set.
+Set adalah kumpulan beberapa item dan tidak dapat diubah lagi. Tetapi kita bisa
+melakukan manipulasi set tersebut, dengan cara melakukan konversi tipe data set
+ke list, lalu data list yang kita ubah, setelah diubah, dilakukan kembali
+konversi data dari list ke set.

@@ -17,21 +17,21 @@ terjadi sesuai urutan berikut:
 ## Membuka file
 
 Python memiliki built-in function yakni `open()` yang berfungsi untuk membuka
-sebuah file. Fungsi tersebut akan mengembalikan sebuah objek file. Fungsi tersebut
-menerima 2 argumen yaitu path dari file dan mode yang digunakan saat membuka file.
-Daftar mode yang tersedia dapat dilihat pada tabel berikut:
+sebuah file. Fungsi tersebut akan mengembalikan sebuah objek file. Fungsi
+tersebut menerima 2 argumen yaitu path dari file dan mode yang digunakan saat
+membuka file. Daftar mode yang tersedia dapat dilihat pada tabel berikut:
 
-|  mode  |  deskripsi  |
-|--------|-------------|
-| r | Membuka file untuk operasi baca (default) |
-| w | Membuka file untuk operasi tulis. Membuat file baru apabila file tersebut
-tidak ada atau menghapus isi file bila file tersebut ada |
-| x | Membuat file secara exclusive. Mengembalikan kesalahan jika file ada |
-| a | Membuka file dan meletakkan kursor di akhir file tanpa menghapus isi file
-tersebut. Membuat file baru jika file tersebut tidak ada |
-| t | Membuka file dalam text mode (default) |
-| b | Membuka file dalam binary mode |
-| + | Membuka file dengan operasi baca dan tulis |
+|                                                          | mode | deskripsi                                                                 |
+|:--------------------------------------------------------:|:----:|:-------------------------------------------------------------------------:|
+|                                                          | r    | Membuka file untuk operasi baca (default)                                 |
+|                                                          | w    | Membuka file untuk operasi tulis. Membuat file baru apabila file tersebut |
+| tidak ada atau menghapus isi file bila file tersebut ada |      |                                                                           |
+|                                                          | x    | Membuat file secara exclusive. Mengembalikan kesalahan jika file ada      |
+|                                                          | a    | Membuka file dan meletakkan kursor di akhir file tanpa menghapus isi file |
+| tersebut. Membuat file baru jika file tersebut tidak ada |      |                                                                           |
+|                                                          | t    | Membuka file dalam text mode (default)                                    |
+|                                                          | b    | Membuka file dalam binary mode                                            |
+|                                                          | +    | Membuka file dengan operasi baca dan tulis                                |
 
 Misalnya:
 
@@ -46,13 +46,14 @@ Hello world
 This is the content of test.txt
 ```
 
-Untuk membaca konten dari sebuah file, kita dapat menggunakan method read() dari
-objek file yang kita miliki. Perlu diperhatikan bahwa setelah kita selesai menggunakan
-objek file untuk membaca atau menulis sebuah file, kita perlu memanggil method close()
-dari objek file tersebut. Hal ini dilakukan untuk menutup file tersebut setelah selesai
-digunakan.
+Untuk membaca konten dari sebuah file, kita dapat menggunakan method `read()`
+dari objek file yang kita miliki. Perlu diperhatikan bahwa setelah kita selesai
+menggunakan objek file untuk membaca atau menulis sebuah file, kita perlu
+memanggil method `close()` dari objek file tersebut. Hal ini dilakukan untuk
+menutup file tersebut setelah selesai digunakan.
+
 Terdapat cara lain untuk mengakses file pada Python tanpa perlu memanggil method
-close() secara eksplisit yakni menggunakan keyword with
+`close()` secara eksplisit yakni menggunakan keyword `with`.
 
 ```python
 with open("test.txt") as file:
@@ -68,8 +69,8 @@ This is the content of test.txt
 
 ## Menulis File
 
-Untuk menulis file pada Python, kita menggunakan fungsi open() dengan menggunakan
-mode `w`.
+Untuk menulis file pada Python, kita menggunakan method `open()` dengan
+menggunakan mode `w`.
 
 ```python
 with open("buah.txt", "w") as file:
