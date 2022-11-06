@@ -21,17 +21,15 @@ sebuah file. Fungsi tersebut akan mengembalikan sebuah objek file. Fungsi
 tersebut menerima 2 argumen yaitu path dari file dan mode yang digunakan saat
 membuka file. Daftar mode yang tersedia dapat dilihat pada tabel berikut:
 
-|                                                          | mode | deskripsi                                                                 |
-|:--------------------------------------------------------:|:----:|:-------------------------------------------------------------------------:|
-|                                                          | r    | Membuka file untuk operasi baca (default)                                 |
-|                                                          | w    | Membuka file untuk operasi tulis. Membuat file baru apabila file tersebut |
-| tidak ada atau menghapus isi file bila file tersebut ada |      |                                                                           |
-|                                                          | x    | Membuat file secara exclusive. Mengembalikan kesalahan jika file ada      |
-|                                                          | a    | Membuka file dan meletakkan kursor di akhir file tanpa menghapus isi file |
-| tersebut. Membuat file baru jika file tersebut tidak ada |      |                                                                           |
-|                                                          | t    | Membuka file dalam text mode (default)                                    |
-|                                                          | b    | Membuka file dalam binary mode                                            |
-|                                                          | +    | Membuka file dengan operasi baca dan tulis                                |
+| mode | deskripsi                                                                 |
+|:----:|:--------------------------------------------------------------------------|
+| r    | Membuka file untuk operasi baca (default)                                 |
+| w    | Membuka file untuk operasi tulis. Membuat file baru apabila file tersebut tidak ada atau menghapus isi file bila file tersebut ada |
+| x    | Membuat file secara exclusive. Mengembalikan kesalahan jika file ada      |
+| a    | Membuka file dan meletakkan kursor di akhir file tanpa menghapus isi file tersebut. Membuat file baru jika file tersebut tidak ada |
+| t    | Membuka file dalam text mode (default)                                    |
+| b    | Membuka file dalam binary mode                                            |
+| +    | Membuka file dengan operasi baca dan tulis                                |
 
 Misalnya:
 
