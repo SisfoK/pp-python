@@ -39,6 +39,8 @@ print(file.read())
 file.close()
 ```
 
+Hasilnya:
+
 ```bash
 Hello world
 This is the content of test.txt
@@ -48,10 +50,9 @@ Untuk membaca konten dari sebuah file, kita dapat menggunakan method `read()`
 dari objek file yang kita miliki. Perlu diperhatikan bahwa setelah kita selesai
 menggunakan objek file untuk membaca atau menulis sebuah file, kita perlu
 memanggil method `close()` dari objek file tersebut. Hal ini dilakukan untuk
-menutup file tersebut setelah selesai digunakan.
-
-Terdapat cara lain untuk mengakses file pada Python tanpa perlu memanggil method
-`close()` secara eksplisit yakni menggunakan keyword `with`.
+menutup file tersebut setelah selesai digunakan. Terdapat cara lain untuk
+mengakses file pada Python tanpa perlu memanggil method `close()` secara
+eksplisit yakni menggunakan keyword with.
 
 ```python
 with open("test.txt") as file:
@@ -67,7 +68,7 @@ This is the content of test.txt
 
 ## Menulis File
 
-Untuk menulis file pada Python, kita menggunakan method `open()` dengan
+Untuk menulis file pada Python, kita menggunakan fungsi open() dengan
 menggunakan mode `w`.
 
 ```python

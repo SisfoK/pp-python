@@ -60,7 +60,7 @@ dimana string tersebut berada. Special sequences membuat pola yang umum
 digunakan lebih mudah untuk ditulis.
 
 | Expression | Arti                                        |
-|-\A---------|-true jika karakter ditemukan di awal string-|
+| \A         | true jika karakter ditemukan di awal string |
 | \b         | true jika karakter ditemukan di awal kata   |
 | \B         | true jika karakter ditemukan di akhir kata  |
 | \d         | true jika ditemukan angka pada kata         |
