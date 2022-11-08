@@ -12,4 +12,3 @@ Contributor:
 
 - [Deo Valiandro](https://github.com/deovaliandro)
 - [Bob Chrismansyah](https://github.com/BobChrismansyah)
-

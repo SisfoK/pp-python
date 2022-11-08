@@ -4,6 +4,26 @@ layout: default
 author: '@deovaliandro dan @BobChrismansyah'
 ---
 
+- [Keywords](#keywords)
+- [Identifiers](#identifiers)
+- [Statements](#statements)
+- [Indentation](#indentation)
+- [Comments](#comments)
+- [Variables & Constant](#variables--constant)
+- [Data Types](#data-types)
+  - [1. Python Numbers](#1-python-numbers)
+  - [2. Python Strings](#2-python-strings)
+  - [3. Python List](#3-python-list)
+  - [4. Python Tuple](#4-python-tuple)
+  - [5. Python Set](#5-python-set)
+  - [6. Python Dictionary](#6-python-dictionary)
+  - [7. Python Boolean](#7-python-boolean)
+- [Conversion of Data Types](#conversion-of-data-types)
+  - [Implicit Type Conversion](#implicit-type-conversion)
+  - [Explicit Type Conversion](#explicit-type-conversion)
+- [Input](#input)
+- [Operators](#operators)
+
 Python sebagai bahasa pemrograman yang populer dan komprehensif dengan
 menggabungkan kapabilitas, sintaksis kode yang jelas serta dilengkapi pustaka
 standar yang mempunyai fungsionalitas sangat besar. Python termasuk dari jajaran
@@ -19,8 +39,8 @@ dalam Python merupakan case sensitive.
 
 Python 3.1 memiliki 33 keywords yang tidak dapat digunakan sebagai nama
 variabel, fungsi, atau objek lainnya. Semua keywords selain `True`, `False`, dan
-`None`, ditulis dalam <mark>lowercase</mark>. Berikut ini adalah daftar keywords
-yang ada pada Python:
+`None`, ditulis dalam lowercase. Berikut ini adalah daftar keywords yang ada
+pada Python:
 
 | False  | await    | else    | import   | pass   |
 | None   | break    | except  | in       | raise  |
@@ -50,7 +70,7 @@ Aturan dalam penamaan identifiers:
     ```
 
 2. Identifiers tidak boleh diawali dengan digit angka. Contoh:
-   
+
    ```python
    1variable #penulisan salah
    variable1 #penulisan benar
@@ -59,38 +79,39 @@ Aturan dalam penamaan identifiers:
 3. Keywords tidak dapat digunakan sebagai identifiers.
 
     ```python
-True = 1 #penulisan salah
+    True = 1 #penulisan salah
     ```
 
     Maka outputnya akan error:
 
     ```bash
-File "e:\SISFOK\tes.py", line 1
-True = 1
-^^^^
-SyntaxError: cannot assign to True
+    File "e:\SISFOK\tes.py", line 1
+    True = 1
+    ^^^^
+    SyntaxError: cannot assign to True
     ```
 
 4. Tidak diperbolehkan menggunakan symbol special seperti `!`, `@`, `#`, `$`,
    `%`, dll. Contoh:
 
-```python
-x$ = 1 #penulisan salah
-```
-Outputnya:
+    ```python
+    x$ = 1 #penulisan salah
+    ```
 
-```bash
-File "e:\SISFOK\tes.py", line 1
-x$ = 1
- ^
-SyntaxError: invalid syntax
-```
+    Outputnya:
 
-1. Sebuah identifier dapat memiliki panjang berapapun.
+    ```bash
+    File "e:\SISFOK\tes.py", line 1
+    x$ = 1
+    ^
+    SyntaxError: invalid syntax
+    ```
 
-2. Identifier Class harus diawali dengan huruf kapital sedangkan semua
-identifier lainnya harus diawali dengan huruf kecil. Contoh:
-    
+5. Sebuah identifier dapat memiliki panjang berapapun.
+
+6. Identifier Class harus diawali dengan huruf kapital sedangkan semua
+   identifier lainnya harus diawali dengan huruf kecil. Contoh:
+
     ```python
     class Vehicle:
         wheels = 4
@@ -101,7 +122,7 @@ identifier lainnya harus diawali dengan huruf kecil. Contoh:
     ```
 
 7. Identifier yang dimulai dengan underscore (`_`) menandakan identifier
-tersebut merupakan identifier private. Contoh:
+   tersebut merupakan identifier private. Contoh:
 
     ```python
     class Base:
@@ -114,20 +135,20 @@ tersebut merupakan identifier private. Contoh:
    identifier tersebut merupakan identifier yang sangat private. Contoh:
 
     ```python
-class Base:
-# Declaring private method
-    def __fun(self):
-        print ("Private method")
+    class Base:
+        # Declaring private method
+        def __fun(self):
+            print ("Private method")
     ```
 
 9. Jika identifier tersebut juga diakhiri dengan dua buah underscore (`____`),
-identifier tersebut merupakan nama yang telah ditetapkan Python. Contoh:
+    identifier tersebut merupakan nama yang telah ditetapkan Python. Contoh:
 
     ```python
-class Base:
-# Declaring private method
-    def __init__(self):
-        print ("Private method")
+    class Base:
+        # Declaring private method
+        def __init__(self):
+            print ("Private method")
     ```
 
 > Hal yang perlu diperhatikan dalam penamaan identifiers adalah:
@@ -142,7 +163,7 @@ class Base:
 >
 >   4. Identifiers tidak boleh menggunakan keywords.
 
-## C. Statements
+## Statements
 
 Statements adalah instruksi atau pernyataan yang diberikan untuk dieksekusi oleh
 mesin. Penulisan statements dalam Python tidak diakhiri dengan tanda titik koma
@@ -184,8 +205,7 @@ tanda titik koma `;`.
 a = 1; b = 2; c = 3
 ```
 
-
-## D. Indentation
+## Indentation
 
 Sebagian besar Bahasa pemrograman seperti C, C++, dan Java menggunakan kurung
 kurawal `{}` untuk mendefinisikan sebuah blok kode sedangkan Python menggunakan
@@ -199,6 +219,7 @@ spasi digunakan sebagai indentasi dan lebih dipilih daripada tab. Sebagai
 contoh:
 
 - Penulisan Benar
+
 ```python
 for i in range(1, 20):
     if i == 3:
@@ -207,6 +228,7 @@ for i in range(1, 20):
 ```
 
 - Penulisan Salah
+
 ```python
 for i in range(1, 20):
     if i == 3:
@@ -232,7 +254,7 @@ if True:print('Yes'); x = 10
 
 Indentasi yang salah akan menghasilkan error **IndentationError**.
 
-## E.Comments
+## Comments
 
 Comments sangatlah penting dalam penulisan program. Comments membantu
 mendeskripsikan isi dari kode tersebut sehingga orang lain tidak sulit dalam
@@ -254,8 +276,7 @@ memahami kode yang kita tulis. Penulisan comment dalam Python terbagi menjadi:
   """
   ```
 
-
-## F. Variables & Constant
+## Variables & Constant
 
 Variabel merupakan representasi dari alamat memori yang digunakan untuk
 menyimpan nilai dari data. Sintaks dari penulisan variabel adalah name = value.
@@ -363,8 +384,7 @@ Aturan dan Ketentuan dalam penamaan variabel dan constant:
 7. Jangan gunakan simbol spesial seperti `!`, `@,`, `#`, `$`, `%`, dll.
 8. Jangan memulai nama variabel dengan angka.
 
-
-## G. Data Types
+## Data Types
 
 Data types adalah klasifikasi atau kategorisasi item data yang mewakili jenis
 nilai yang memberi tahu operasi apa yang dapat dilakukan pada data tertentu.
@@ -470,7 +490,7 @@ Tuple sendiri mirip dengan dengan list tetapi item dalam tuple tidak dapat
 diubah. Tuple setelah dibuat tidak dapat dimodifikasi. Ini dikarenakan tuple
 digunakan untuk melindungi data dan biasanya lebih cepat daripada list yang
 dapat berubah secara dinamis. Tuple sendiri dideklarasikan menggunakan tanda
-kurung (<item>, <item>, ...) dan itemnya dipisah menggunakan tanda koma.
+kurung (`<item>`, `<item>`, ...) dan itemnya dipisah menggunakan tanda koma.
 
 ```python
 a = (1, 2.2, 'python')
@@ -479,7 +499,7 @@ a = (1, 2.2, 'python')
 ### 5. Python Set
 
 Set adalah sebuah koleksi dari berbagai item unik. Set didefinisikan oleh item
-yang dipisah oleh koma di dalam sebuah kurung kurawal {<item>, <item>, ...}.
+yang dipisah oleh koma di dalam sebuah kurung kurawal {`<item>`, `<item>`, ...}.
 Item dari sebuah set tidak terurut. Karena set itu memiliki value unik maka set
 akan mengeliminasi value yang duplikat.
 
@@ -529,7 +549,7 @@ Selain tipe data di atas, berikut adalah tipe data lengkap dari Python:
 - Boolean type: bool
 - Set data types: set, frozenset
 
-## H. Conversion of Data Types
+## Conversion of Data Types
 
 Sebuah proses pengubahan nilai dari suatu tipe data ke tipe data yang lainnya
 disebut konversi tipe data. Python sendiri memiliki 2 jenis konversi data:
@@ -609,7 +629,7 @@ tipe data string ke integer dengan menggunakan fungsi int(). Setelah dilakukan
 konversi maka kedua variabel tersebut dapat dijumlahkan dan menghasilkan sebuah
 value yang bertipe data integer.
 
-## I. Input
+## Input
 
 Untuk menambah fleksibilitas dalam program, kita mungkin mau mengambil input
 dari user. Python menyediakan fungsi input() untuk mengambil inputan dari user
@@ -634,7 +654,7 @@ Input a name : Sistem Informasi
 Sistem Informasi
 ```
 
-## J. Operators
+## Operators
 
 Operator adalah sebuah symbol special dalam Python yang berguna untuk
 menjalankan komputasi aritmatika atau logika. Value yang dioperasikan oleh

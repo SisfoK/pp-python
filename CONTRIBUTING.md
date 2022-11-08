@@ -54,7 +54,7 @@ Instalasi
 
 Kami menggunakan flake8 untuk lint testing agar penulisan kode jadi lebih baik.
 
-#### Installasi flake8:
+#### Installasi flake8
 
 ```bash
 pip install flake8
